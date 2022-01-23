@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/CSSRulePlugin.min.js"></script>
+    <script src="./main.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <title>GSAP</title>
+  </head>
+  <body>
+    <h1>Move one element</h1>
+    <div class="rectangle rectangle-1"></div>
+
+    <h1>Timeline with from, to, set functions</h1>
+    <div class="rectangle rectangle-2"></div>
+    <br />
+    <div class="rectangle rectangle-2"></div>
+    <div class="circle circle-1"></div>
+
+    <h1>Timing</h1>
+    <div class="flex">
+      <button class="btn-default" onclick="setStagger('center')">Center</button>
+      <button class="btn-default" onclick="setStagger('start')">Start</button>
+      <button class="btn-default" onclick="setStagger('end')">End</button>
+      <button class="btn-default" onclick="setStagger('edges')">Edges</button>
+    </div>
+    <div class="rectangle-timing-wrapper brd">
+      <div class="rectangle timign-reactangle"></div>
+      <div class="rectangle timign-reactangle"></div>
+      <div class="rectangle timign-reactangle"></div>
+      <div class="rectangle timign-reactangle"></div>
+      <div class="rectangle timign-reactangle"></div>
+    </div>
+
+    <br />
+    <br />
+    <h1>Tween control</h1>
+    <div class="flex">
+      <button class="btn-default" id="play">Play</button>
+      <button class="btn-default" id="pause">Pause</button>
+      <button class="btn-default" id="reverse">Reverse</button>
+      <button class="btn-default" id="restart">Restart</button>
+    </div>
+    <br />
+    <div class="rectangle controlled-rectangle"></div>
+    <br />
+  </body>
+</html>
