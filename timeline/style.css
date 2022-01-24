@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.brd {
+  border: 1px solid;
+}
+
+.flex {
+  display: flex;
+}
+
+body {
+  height: 100vh;
+  position: relative;
+  overflow: hidden !important;
+}
+
+img {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  opacity: 0.75;
+}
+
+#p6 {
+  z-index: 1;
+}
+#p5 {
+  z-index: 2;
+}
+#p4 {
+  z-index: 3;
+}
+#p3 {
+  z-index: 5;
+}
+#p2 {
+  z-index: 4;
+}
+#p1 {
+  z-index: 6;
+}
