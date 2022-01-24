@@ -47,3 +47,17 @@ img {
 #p1 {
   z-index: 6;
 }
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+  padding-top: 100px;
+}
+
+li {
+  display: inline-block;
+  font-size: 81px;
+  font-weight: bold;
+  color: #74625b;
+}

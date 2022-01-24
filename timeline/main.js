@@ -31,4 +31,10 @@ document.addEventListener('DOMContentLoaded', function () {
         .from('#p1', { y: -180 }, 5)
         .to('#p1', { x: 0, y: -62, }, 5)
 
+        .from('ul li', {
+            opacity: 0,
+            scale: .7,
+            stagger: .3,
+        })
+
 })
