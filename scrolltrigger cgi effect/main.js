@@ -43,14 +43,12 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     const layers = gsap.utils.toArray('.multiple-layers span');
-    layers.map((el, ind) => {
-        gsap.to(layers, {
-            width: '100%',
-            ease: 'none',
-            repeat: -1,
-            yoyo: true,
-            stagger: 1,
-        })
+    gsap.to(layers, {
+        width: '100%',
+        ease: 'none',
+        repeat: -1,
+        yoyo: true,
+        stagger: 1,
     })
 
 })
