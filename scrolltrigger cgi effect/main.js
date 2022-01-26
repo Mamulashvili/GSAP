@@ -1,8 +1,32 @@
 document.addEventListener('DOMContentLoaded', function () {
 
     gsap.defaults({
-        duration: .5
+        duration: 1
     });
+
+    const headerTl = gsap.timeline();
+    headerTl
+        .from('h1', {
+            opacity: 0,
+            scale: 0.9,
+            duration: 3,
+        })
+        .from('.small', {
+            x: '-100vh',
+            opacity: 0,
+            duration: 1,
+        }, 1)
+        .from('#scroll-down', {
+            x: '100vh',
+            opacity: 0,
+            duration: 1,
+        }, 1)
+        .to('#scroll-down', {
+            y: -50,
+            duration: 1,
+            repeat: -1,
+            yoyo: true,
+        }, 2);
 
     gsap.to('.container span', {
         width: '100%',
@@ -16,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
             scrub: 1,
             // pinSpacing: true,
         },
-    })
+    });
 
 
 })

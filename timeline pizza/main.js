@@ -1,8 +1,9 @@
 document.addEventListener('DOMContentLoaded', function () {
 
-    gsap.config({
+    gsap.defaults({
         duration: .5
-    })
+    });
+
     const tl = gsap.timeline();
     tl
         .from('img', {
@@ -16,11 +17,11 @@ document.addEventListener('DOMContentLoaded', function () {
         })
         .from('#p6', { y: -180 }, 0)
 
-        .from('#p5', { y: -180 }, 1)
-        .to('#p5', { x: -5, y: -22, }, 1)
+        .from('#p5', { y: -180 }, "<")
+        .to('#p5', { x: -5, y: -22, }, "<")
 
-        .from('#p4', { y: -180 }, 2)
-        .to('#p4', { x: -10, y: -22, }, 2)
+        .from('#p4', { y: -180 }, "<")
+        .to('#p4', { x: -10, y: -22, }, "<")
 
         .from('#p3', { y: -180 }, 3)
         .to('#p3', { x: -24, y: -29, }, 3)

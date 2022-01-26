@@ -7,6 +7,24 @@
 
 header {
   height: 100vh;
+  background-color: #3cb371;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+header p {
+  margin-top: 100px;
+}
+
+header span {
+  font-size: 21px;
+  margin-top: 5px;
+}
+
+h1 {
+  font-size: 71px;
 }
 
 .brd {
