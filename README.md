@@ -32,3 +32,15 @@ tl.from(target, optionsObj, position)
         }
     })
 ```
+### `ScrollTrigger CGI effect`
+repeat scroll down text animation infinitely
+```js
+gsap.to('#scroll-down', {
+    y: -50,
+    duration: 1,
+    repeat: -1,     // repeat count
+   //Gets or sets the tween's yoyo state, where true causes the tween to go back and forth, alternating backward and forward on each repeat.
+   yoyo: true
+}, 2);
+```
+
